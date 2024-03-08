@@ -24,7 +24,7 @@ def hello_world():
 @cross_origin()
 def get_all_books():
     return jsonify({"books":books})
-
+    
 @app.route("/books",methods=["POST"])
 @cross_origin()
 def insert_id_book():
